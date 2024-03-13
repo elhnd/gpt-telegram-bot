@@ -1,0 +1,205 @@
+Formations et Certifications:
+
+2023:
+Building Real-Time REST APIs with Spring Boot
+Udemy. Réf : UC-4cbdc9f5-74f1-4681-8f5c-bf5fbc2fcf95
+
+2021:
+Certification : Les fondements de la gestion de projet agile
+LinkedIn Learning. Réf : AQ9spyGri4o0WaWbR-YEcpKIpFQX
+
+2020:
+Certification : Utilisation d’API REST dans un projet
+OpenClassrooms. Réf : 1568237410
+
+2019:
+Certification professionnelle en développement web et mobile
+Orange Digital Center Senegal. Réf : 10/440465
+
+2022:
+Diplôme d’ingénieur en Méthodes Informatiques Appliquées à la Gestion des Entreprises (MIAGE)
+Ecole Supérieure de Commerce de Dakar (SupDeco Dakar)
+
+2017:
+Licence en sciences économiques
+Université Cheikh Anta Diop de Dakar
+
+Langues:
+Anglais: Professionnel
+
+
+Projets :
+
+Du 10/2021
+au 02/2023 :
+Développeur Fullstack PHP/Symfony/Angular à Atos Sénégal
+Projet: Services Qualité Addresse
+
+Ce projet consiste en la création d'une plateforme permettant le traitement et la gestion des adresses postales.
+L'objectif est d'offrir aux utilisateurs un moyen efficace d'interagir avec le Service National de l'Adresse (SNA)
+pour l’envoi, la récupération, la valorisation et la gestion des commandes de traitement d'adresses.
+Equipe:  1 PM, 1 Scrum Master,  1 Techlead, 3  dév. séniors,  2 dev. confirmés (dont moi)
+Méthodologie: Scrum
+Réalisations :
+Participer aux cérémonies Agile
+Développer des API GraphQL avec API Platform pour:
+Récupérer les contrats utilisateur depuis le socle Contrat.
+Extraire le fichier CSV contenant les adresses à traiter.
+Envoyer les données d'adresse au Service National de l'Adresse (SNA).
+Valoriser une commande (fixer le prix).
+Passer une commande de traitement d'adresses gratuite, Gold ou Silver.
+Récupérer les commandes traitées par le SNA.
+Générer un bilan de traitement d’une commande à afficher dans un dashboard
+Développer des modules Angular pour gérer diverses fonctionnalités :
+Implémenter le module d'authentification OpenID Connect.
+Intégrer le lazy loading pour charger les composants.
+Installer des guards pour contrôler l'accès aux composants.
+Gérer la création de commandes.
+Fournir un bilan de traitement pour chaque commande.
+Créer une commande symfony de purge de données via cron batch.
+Mettre en place un écouteur d'événements pour envoyer des mails lors d'actions sur les commandes.
+Effectuer des tests unitaires en utilisant PHPUnit.
+Réaliser des tests croisés sur les fonctionnalités des collègues.
+Déployer la solution sur les environnements  de test.
+Documenter les API créées avec l'aide de Swagger API.
+Rédiger la documentation des fonctionnalités sur un wiki (Confluence).
+
+Environnement technique:
+PHP 7.4, Symfony 5.4, PHPUnit 9, Angular 8-11, API Platform 2.7, GraphQL, MySql, Doctrine ORM 2.14,
+Docker, Jenkins, Git, GitLab
+
+Du 10/2022
+au 01/2023:
+
+Développeur Fullstack PHP/Symfony à Atos Sénégal
+
+Projet: JANUS
+Janus est un projet de proxification d'API qui consiste à unifier l'accès aux API hétérogènes (REST, XML, GraphQL)
+via GraphQL. Cette solution permettait aux développeurs d’interagir avec les différentes API à travers un format de réponse unique et cohérent.
+Equipe: 1 PM,  2 dév. séniors, 3 dév. confirmés (dont moi), 1 DevOps, une équipe de test dédiée.
+Méthodologie: Scrum
+Réalisations:
+Participer aux cérémonies Agile
+Proxifier une API REST du socle Commande en GraphQL pour le passage d’une commande de prestation de service.
+Proxifier une API REST du socle Valorisation en GraphQL pour la détermination du prix d’une commande.
+Proxifier une API XML du socle Contrat en GraphQL pour la vérification de contrat pour la finalisation d’une commande.
+Proxifier une API XML du socle Contrat en GraphQL pour avoir la liste des déposants de contrat.
+Effectuer des tests unitaires avec PHPUnit.
+Réaliser des tests croisés sur les fonctionnalités des collègues.
+Déployer sur les plateformes de test.
+Documenter les API créées avec Swagger API.
+Gérer la résolution et la correction des anomalies.
+Rédiger la documentation technique des fonctionnalités sur un wiki (Confluence).
+
+Environnement technique:
+Symfony 5.4, API Platform 2.7, PHPUnit 9, GraphQL, MySql, Security Bundle, Doctrine ORM 2.14, Docker, Jenkins,
+Git, GitLab
+
+Du 03/2022
+au 06/2022:
+Développeur Fullstack PHP/Symfony à Atos Sénégal
+Projet: Presse Poste (Testez vos adresses)
+Comme son nom l'indique, Testez vos adresses est une application de La Poste qui permet aux résidents français de vérifier l'exactitude d'une adresse.
+Equipe: 1 PM, 1 dév. séniors, 1 dev. junior, 1 DevOps, 1 testeurs.
+Méthodologie: Scrum
+Réalisations:
+Corriger les anomalies.
+Implémenter les évolutions côté backend et frontend.
+Intégrer un filtre pour gérer la mention CEDEX sur les adresses.
+Effectuer des tests unitaires avec PHPUnit.
+Déployer sur les plateformes de test.
+Documenter les API créées avec Swagger API.
+Rédiger la documentation des fonctionnalités sur un wiki (Confluence).
+
+Environnement technique :
+PHP, Symfony 5.4, MySql, Doctrine ORM 2.14, Docker, Jenkins, Git, GitLab
+
+Du 04/2021
+au 09/2021 :
+Développeur Fullstack PHP/Symfony/Angular à Atos Sénégal
+Projet: Collecte Primo Web
+Collecte Primo permet aux clients professionnels de La Poste France de ne plus se déplacer pour envoyer leur courrier.
+Tous les jours, le facteur le récupère dans leurs locaux, lors de sa tournée, pour l’expédier le jour même. Ce qui permet aux clients de gagner du temps pour leur activité.
+Equipe: 1 PM, 1 dév. séniors, 1 dév. confirmé(dont moi) , 1 DevOps, 1 testeur.
+Méthodologie: Scrum
+Réalisations :
+Participer aux cérémonies Agile
+Concevoir et modéliser la base de données
+Mettre en place l’architecture backend de la partie paiement avec Symfony 5.4
+Mettre en place l’architecture frontend de la partie paiement avec Angular 11
+Développer des API REST pour :
+Récupérer les mandats SEPA d'un client via son COCLICO (numéro client La Poste).
+Créer un mandat SEPA avec les données bancaires du client.
+Signer un mandat SEPA.
+Vérifier un mandat SEPA à partir du RUM (Référence Unique de Mandat) du client.
+Récupérer les mandats validés d'un client.
+Gérer l'envoi de mails de confirmation de paiement.
+Développement frontend avec Angular:
+Intégrer la maquette des pages de paiement.
+Mettre en place le lazy loading pour charger les composants.
+Installer des guards pour contrôler l'accès aux composants.
+Créer le module de gestion des mandats SEPA.
+Développer une commande Symfony pour purger les données via cron batch.
+Réaliser des tests unitaires avec PHPUnit.
+Effectuer le déploiement sur les plateformes de test.
+Documenter les API implémentées avec Swagger API.
+Rédiger la documentation des fonctionnalités sur un wiki (Confluence).
+
+Environnement technique :
+PHP, Symfony 5.4, Angular 11, API REST MySql, Doctrine ORM 2.14, Docker, Jenkins, Git, GitLab
+
+
+Du 06/2020
+au 01/2021 :
+Développeur Fullstack PHP/Laravel à grow Sénégal
+
+Projet: growacademy
+
+Il s’agit de la mise en place d’une application web qui a pour but d’initier les jeunes filles
+déscolarisées aux métiers du numérique. L’application prend en charge les langues locales sous
+format audio pour bien aider à la compréhension.
+Equipe:  1 PM, 1 Techlead, 1 dev. Sénior, 2 dev. confirmés, 1 dév. juniors (dont moi)
+Méthodologie: Scrum
+Réalisations :
+Assister aux cérémonies Agile.
+Élaborer et structurer la base de données.
+Suggérer des idées pour améliorer le parcours des apprenantes sur l'application.
+Fusionner les maquettes avec Bootstrap 4 et le moteur de templating Blade.
+Concevoir et mettre en œuvre les fonctionnalités de la classe virtuelle pour informer les apprenantes sur les cours.
+Intégrer Zoom (Zoom API et Zoom Web SDK) pour les visioconférences entre apprenantes et mentors.
+Implémenter les fonctionnalités pour la lecture de vidéos et audios des cours.
+Construire et mettre en place le tableau de bord montrant la progression des apprenantes.
+Créer et déployer les fonctionnalités des quiz de validation de parcours.
+Concevoir les cours pratiques et théoriques sur la plateforme.
+Configurer le serveur o2switch pour la mise en ligne de l'application.
+Former les premières apprenantes à l'utilisation de l'application.
+
+Environnement technique :
+PHP, Laravel 6.6, MySql, Eloquent, Apache2, Git, GitLab
+
+Du 01/2020
+au 06/2020:
+Développeur Fullstack PHP/Symfony/VueJs à JA Delmas
+
+Projet: WONDA (WOrkflow de Demande d’Achat)
+
+Application web pour la gestion des demandes d’achat internes sur l’ensemble du réseau JA DELMAS en Afrique (11 pays).
+Equipe: 1 Chef de projet, 3 dev.séniors, 2 dev. juniors  (dont moi)
+Méthodologie: Scrum
+Réalisations:
+Participer aux cérémonies Agile
+Élaborer et structurer la base de données.
+Participer à la sélection des technologies pour le projet.
+Suggérer des idées pour le calcul budgétaire.
+Rédiger les spécifications fonctionnelles et techniques détaillées.
+Fusionner les maquettes avec Bootstrap 4.
+Créer et mettre en œuvre les fonctionnalités de création de compte comptable.
+Développer les fonctionnalités pour l'attribution de budgets annuels pour chaque entité.
+Construire et déployer les fonctionnalités pour la gestion et le contrôle du budget et des comptes comptables.
+Élaborer la fonctionnalité permettant d'attribuer les comptes comptables aux départements de chaque entité de l'entreprise.
+Concevoir les fonctionnalités pour le récapitulatif budgétaire (nécessaire pour la validation d'une demande d'achat).
+Créer les services et composants sur VueJS pour consommer l'API.
+Effectuer des tests unitaires avec PHPUnit.
+
+Environnement technique  :
+PHP, Symfony 4.4, VueJS 2.0, MySql, Apache2, PHPUnit 8, Visual Studio Code, Git, Gitlab, Trello

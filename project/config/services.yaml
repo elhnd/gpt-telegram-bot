@@ -1,0 +1,75 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+parameters:
+    telegram_bot_token: '%env(TELEGRAM_BOT_TOKEN)%'
+    openai_api_key: '%env(OPENAI_API_KEY)%'
+    openai_url: '%env(OPENAI_URL)%'
+    openai_model: '%env(OPENAI_MODEL)%'
+    telegram_webhook_url: '%env(TELEGRAM_WEBHOOK_URL)%'
+    about_me_path: '%kernel.project_dir%/%env(ABOUT_ME_PATH)%'
+    
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    Telegram\Bot\Api:
+        arguments:
+            $token: '%telegram_bot_token%'
+
+    App\Service\OpenAiService:
+        arguments:
+            $apiKey: '%openai_api_key%'
+            $url: '%openai_url%'
+            $model: '%openai_model%'
+
+    App\Service\WebhookService:
+        arguments:
+            $webhookUrl: '%telegram_webhook_url%'
+            $telegram: '@Telegram\Bot\Api'
+
+    App\Service\TelegramService:
+        arguments:
+            $telegram: '@Telegram\Bot\Api'
+            $em: '@Doctrine\ORM\EntityManagerInterface'
+            $openAiService: '@App\Service\OpenAiService'
+
+    App\Service\AboutMe:
+        arguments:
+            $path: '%about_me_path%'
+
+    database_storage:
+        class: App\Adapter\Impl\DatabaseStorage
+        arguments:
+            $em: '@doctrine.orm.entity_manager'
+
+    session:
+        class: Symfony\Component\HttpFoundation\Session\Session
+
+    session_storage:
+        class: App\Adapter\Impl\SessionStorage
+        arguments:
+            $session: '@session'
+
+
+    App\Adapter\StorageAdapter:
+        arguments:
+            - '@database_storage'
+
+
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
